@@ -29,24 +29,3 @@ A modern **Netflix Clone Web App** built with **React.js**, powered by the **TMD
 | React Router | Page routing |
 | Tailwind CSS | UI styling |
 | GitHub Pages | Deployment |
-
-----
-
-## 📁 Folder Structure
-
-netflix-clone/
-├── public/                   # Static public files (favicon, index.html)
-├── src/                      # All source code lives here
-│   ├── api/                  # API functions (TMDB, Stripe)
-│   ├── assets/               # Images, icons, logos
-│   ├── components/           # Reusable UI components (Navbar, MovieCard)
-│   ├── context/              # Global state (if using Context API)
-│   ├── pages/                # Route-based pages (Home, MovieDetail, Subscribe)
-│   ├── styles/               # Custom CSS or Tailwind configs (optional)
-│   ├── App.jsx               # Main App structure & routes
-│   ├── index.js              # Entry point
-├── .env                      # API keys (TMDB, Stripe)
-├── .gitignore                # Ignore sensitive files
-├── package.json              # Project metadata and scripts
-├── README.md                 # Project documentation
-
