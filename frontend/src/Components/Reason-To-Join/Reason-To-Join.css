@@ -1,0 +1,81 @@
+.reasons {
+  max-width: 1300px;
+  margin: 60px auto 0 auto;
+  padding: 0 3vw;
+}
+
+.reasons__title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+.reasons__cards {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reasons__card {
+  background: linear-gradient(135deg, #23243a 60%, #1a1a2e 100%);
+  border-radius: 24px;
+  padding: 36px 32px 28px 32px;
+  min-width: 200px;
+  max-width: 250px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.reasons__card-title {
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.reasons__card-desc {
+  color: #d1d1d1;
+  font-size: 1.08rem;
+  margin-bottom: 32px;
+  min-height: 60px;
+}
+
+.reasons__card-icon {
+  font-size: 2.5rem;
+  align-self: flex-end;
+  margin-top: auto;
+  filter: drop-shadow(0 2px 8px #e50914aa);
+}
+
+@media (max-width: 900px) {
+  .reasons__cards {
+    gap: 18px;
+  }
+  .reasons__card {
+    min-width: 180px;
+    padding: 24px 12px 18px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reasons__cards {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .reasons__card {
+    max-width: 100%;
+    min-width: 0;
+    padding: 18px 8px 12px 8px;
+  }
+  .reasons__title {
+    font-size: 1.3rem;
+  }
+} 

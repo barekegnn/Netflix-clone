@@ -1,0 +1,80 @@
+.get-started {
+    margin: 36px auto 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.get-started__prompt {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 22px;
+}
+
+.get-started__form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+}
+
+.get-started__input {
+    flex: 1 1 350px;
+    min-width: 180px;
+    padding: 20px 18px;
+    font-size: 1.1rem;
+    border: 1.5px solid #555;
+    border-radius: 4px 0 0 4px;
+    background: #181818;
+    color: #fff;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.get-started__input:focus {
+    border-color: #e50914;
+}
+
+.get-started__button {
+    background: #e50914;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.get-started__button:hover {
+    background: #b0060f;
+}
+
+.get-started__arrow {
+    font-size: 1.6rem;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .get-started__form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .get-started__input,
+    .get-started__button {
+        border-radius: 4px;
+        width: 100%;
+        margin: 0 0 10px 0;
+        padding: 16px 12px;
+        font-size: 1.1rem;
+    }
+
+    .get-started__button {
+        font-size: 1.1rem;
+        padding: 0 18px;
+    }
+}

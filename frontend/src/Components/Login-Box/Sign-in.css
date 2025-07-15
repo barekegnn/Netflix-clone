@@ -1,0 +1,80 @@
+.login-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 48px 32px 36px 32px;
+  border-radius: 6px;
+  max-width: 350px;
+  margin: 40px auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-box__title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.login-box__field {
+  margin-bottom: 18px;
+}
+
+.login-box__input {
+  width: 100%;
+  padding: 14px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #333;
+  color: #fff;
+  margin-bottom: 2px;
+  outline: none;
+}
+
+.login-box__input:focus {
+  background: #444;
+}
+
+.login-box__button {
+  width: 100%;
+  padding: 14px 0;
+  background: #e50914;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-box__button:hover {
+  background: #b0060f;
+}
+
+.login-box__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #b3b3b3;
+}
+
+.login-box__remember input {
+  margin-right: 6px;
+}
+
+.login-box__help {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.login-box__help:hover {
+  color: #fff;
+} 
