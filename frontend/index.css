@@ -1,8 +1,43 @@
-
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
 }
-.body{
-text-align: center;
+
+body {
+    min-height: 100vh;
+    background-image: url('/home-page-bg.jpeg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(20, 20, 20, 0.6);
+    z-index: 0;
+    pointer-events: none;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 18vh;
+    background: linear-gradient(180deg, transparent, #141414 90%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+#root {
+    position: relative;
+    z-index: 2;
 }
