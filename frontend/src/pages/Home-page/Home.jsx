@@ -2,8 +2,14 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import GetStarted from "../../Components/Get-started/Get-Started";
-import TrendingNow from "../../Components/Trending-Now/Trending-Now";
 import ReasonToJoin from "../../Components/Reason-To-Join/Reason-To-Join";
+import Carousel from "../../Components/Carousel/Carousel";
+import {
+  fetchTrendingMovies,
+  fetchTrendingTV,
+  fetchPopularMovies,
+  fetchPopularTV,
+} from "../../Api/tmdb";
 import "./Home.css";
 
 export default function Home() {
@@ -15,9 +21,19 @@ export default function Home() {
         <h2 className="hero__subtitle">Watch anywhere. Cancel anytime.</h2>
         <GetStarted />
       </main>
-      <TrendingNow />
+      <Carousel
+        title="Trending Movies"
+        fetchFunction={fetchTrendingMovies}
+        type="movie"
+      />
+      <Carousel title="Trending TV" fetchFunction={fetchTrendingTV} type="tv" />
+      <Carousel
+        title="Popular Movies"
+        fetchFunction={fetchPopularMovies}
+        type="movie"
+      />
+      <Carousel title="Popular TV" fetchFunction={fetchPopularTV} type="tv" />
       <ReasonToJoin />
-      <GetStarted />
       <Footer />
     </div>
   );

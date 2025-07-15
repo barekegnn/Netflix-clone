@@ -1,40 +1,24 @@
-.trending {
-    margin: 48px auto 32px auto;
+.carousel {
+    margin: 40px auto 0 auto;
     max-width: 1200px;
     padding: 0 4vw;
 }
 
-.trending__title {
+.carousel__title {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 18px;
-    letter-spacing: 1px;
 }
 
-.trending__carousel {
+.carousel__row {
     display: flex;
     overflow-x: auto;
     gap: 18px;
     padding-bottom: 8px;
-    scrollbar-width: thin;
-    scrollbar-color: #e50914 #222;
 }
 
-.trending__carousel::-webkit-scrollbar {
-    height: 8px;
-}
-
-.trending__carousel::-webkit-scrollbar-thumb {
-    background: #e50914;
-    border-radius: 4px;
-}
-
-.trending__carousel::-webkit-scrollbar-track {
-    background: #222;
-}
-
-.trending__item {
+.carousel__item {
     flex: 0 0 160px;
     display: flex;
     flex-direction: column;
@@ -43,12 +27,12 @@
     cursor: pointer;
 }
 
-.trending__item:hover {
+.carousel__item:hover {
     transform: scale(1.08);
     z-index: 2;
 }
 
-.trending__image {
+.carousel__image {
     width: 100%;
     height: 230px;
     object-fit: cover;
@@ -58,24 +42,10 @@
     background: #222;
 }
 
-.trending__caption {
+.carousel__caption {
     color: #fff;
     font-size: 1rem;
     text-align: center;
     margin-top: 2px;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
-}
-
-@media (max-width: 700px) {
-    .trending__item {
-        flex: 0 0 110px;
-    }
-
-    .trending__image {
-        height: 150px;
-    }
-
-    .trending__title {
-        font-size: 1.2rem;
-    }
 }
